@@ -1,6 +1,11 @@
+import Head from "next/head";
+import Link from "next/link";
+
 const registration = () => {
     return (
         <div className="hero min-h-screen bg-base-200">
+                    <Head><title>Registration</title></Head>
+
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">New User Registration</h1>
@@ -37,10 +42,12 @@ const registration = () => {
                                 <span className="label-text">Password</span>
                             </label>
                             <input type="password" placeholder="password" className="input input-bordered" />
-
+                            <label className="label">
+                                <p>Already have a account. <Link href="login" className="text-sm underline">Please Login</Link></p>
+                            </label>
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary">Login</button>
+                            <button className="btn btn-primary">Register</button>
                         </div>
                     </div>
                 </div>

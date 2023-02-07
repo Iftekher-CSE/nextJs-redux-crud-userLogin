@@ -1,6 +1,11 @@
+import Head from "next/head";
+import Link from "next/link";
+
 const login = () => {
     return (
         <div className="hero min-h-screen bg-base-200">
+            <Head><title>Login</title></Head>
+
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Login now!</h1>
@@ -20,7 +25,7 @@ const login = () => {
                             </label>
                             <input type="text" placeholder="password" className="input input-bordered" />
                             <label className="label">
-                                <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                                <p>If you are new to this site. <Link href="registration" className="text-sm underline">Please Register</Link></p>
                             </label>
                         </div>
                         <div className="form-control mt-6">
@@ -29,7 +34,7 @@ const login = () => {
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
     );
 };
 

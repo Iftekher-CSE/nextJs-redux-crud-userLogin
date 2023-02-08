@@ -43,7 +43,7 @@ export default function Home() {
                   <button className="btn btn-ghost btn-xs">details</button>
                 </th>
               </tr>
-              
+
             </tbody>
           </table>
         </div>
